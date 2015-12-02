@@ -8,7 +8,7 @@
  * Factory in the pocAngularApp.
  */
 angular.module('pocAngularApp')
-  .factory('InfiniteScroll', function ($http) {
+  .factory('InfiniteScroll', function ($http,$rootScope) {
     var InfiniteScroll = function() {
       this.posts = [];
       this.busy = false;
@@ -21,7 +21,7 @@ angular.module('pocAngularApp')
       this.busy = true;
       $http({
         method: 'GET',
-        url: "http://localhost:7891/api1/posts",
+        url: $rootScope.postsEndPoint,
         params: {
           skip: this.postsDone,
           limit: 10

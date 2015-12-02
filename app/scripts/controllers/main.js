@@ -8,14 +8,14 @@
  * Controller of the pocAngularApp
  */
 angular.module('pocAngularApp')
-  .controller('MainCtrl',function ($scope,$http) {
+  .controller('MainCtrl',function ($scope,$http,$rootScope) {
 
   	$scope.users = {};
 
   	$scope.getUsers = function(val) {
 	    return $http({
 	    	method: "GET",
-	    	url: "http://localhost:7891/api1/users",
+	    	url: $rootScope.postsEndPoint,
 	    	params: {
 	    		name: val
 	    	}

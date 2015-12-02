@@ -29,7 +29,15 @@ angular
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl'
       })
+      .when('/create', {
+        templateUrl: 'views/create_post.html',
+        controller: 'CreatepostCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .run(function ($rootScope){
+    $rootScope.postsEndPoint = "http://localhost:7891/api1/posts";
+    $rootScope.usersEndPoint = "http://poc-inquizit-api.herokuapp.com/api1/users"; 
+  }); 
