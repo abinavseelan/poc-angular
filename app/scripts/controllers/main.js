@@ -15,7 +15,7 @@ angular.module('pocAngularApp')
   	$scope.getUsers = function(val) {
 	    return $http({
 	    	method: "GET",
-	    	url: $rootScope.postsEndPoint,
+	    	url: $rootScope.usersEndPoint,
 	    	params: {
 	    		name: val
 	    	}

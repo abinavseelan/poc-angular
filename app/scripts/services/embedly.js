@@ -21,7 +21,7 @@ angular.module('pocAngularApp')
           params: {
             key: api_key,
             url: url_input,
-            maxwidth: 500,
+            maxwidth: 200,
             luxe: 1,
             chars: 150
           }

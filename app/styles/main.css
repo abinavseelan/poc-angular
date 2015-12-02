@@ -7,6 +7,7 @@
 
 body {
   padding: 0;
+  background-color: #edefed !important;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -16,6 +17,15 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+img{
+  padding: 20px;
+}
+
+.navbar{
+  background-color: #ffffff !important;
+}
+
 
 /* Custom page header */
 .header {
@@ -28,6 +38,10 @@ body {
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+}
+
+.newsfeed{
+  background-color: #edefed;
 }
 
 /* Custom page footer */
