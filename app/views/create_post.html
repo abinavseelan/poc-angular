@@ -4,6 +4,9 @@
     <input type="text" class="form-control" placeholder="Description" ng-model="created_post.desc">
   </div>
   <div class="form-group">
+    <input type="text" class="form-control" placeholder="Question" ng-model="created_post.question">
+  </div>
+  <div class="form-group">
     <input type="text" class="form-control"  placeholder="Embed Content" ng-model="url">
   </div>
   <button type="submit" class="btn btn-default" ng-click="create();">Create</button>
@@ -11,6 +14,8 @@
 
 <hr/>
 
+
+<!-- This is just to show what the generated object is -->
 <pre>
 	{{created_post|json}}
 </pre>
