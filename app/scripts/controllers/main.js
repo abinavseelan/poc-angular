@@ -12,6 +12,7 @@ angular.module('pocAngularApp')
 
   	$scope.users = {};
 
+  	//Search for users
   	$scope.getUsers = function(val) {
 	    return $http({
 	    	method: "GET",
@@ -20,6 +21,7 @@ angular.module('pocAngularApp')
 	    		name: val
 	    	}
 	    }).then(function onSuccess(response){
+	    	//Scan through all the return values and return each users first_name
 	    	return response.data.map(function(item){
 	        	return item.first_name;
 	      	});

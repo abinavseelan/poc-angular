@@ -9,5 +9,8 @@
  */
 angular.module('pocAngularApp')
   .controller('NewsfeedCtrl', function (InfiniteScroll,$scope) {
+
+  	//To Use InfiniteScroll's functions in infinitescroll.js
     $scope.InfiniteScroll = new InfiniteScroll();
+  
   });
