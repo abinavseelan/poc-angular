@@ -20,7 +20,7 @@ angular.module('pocAngularApp')
       getData: function(url_input){
         $http({
           method: 'GET',
-          url: "http://api.embed.ly/1/oembed",
+          url: "https://api.embed.ly/1/oembed",
           params: {
             /*
               key: API Key for Embely [Required]
