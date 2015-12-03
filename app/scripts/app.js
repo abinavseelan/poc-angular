@@ -39,6 +39,6 @@ angular
   })
   .run(function ($rootScope){
     //Using the rootScope to save the endpoints. 
-    $rootScope.postsEndPoint = "http://poc-inquizit-api.herokuapp.com/api1/posts";
-    $rootScope.usersEndPoint = "http://poc-inquizit-api.herokuapp.com/api1/users"; 
+    $rootScope.postsEndPoint = "https://poc-inquizit-api.herokuapp.com/api1/posts";
+    $rootScope.usersEndPoint = "https://poc-inquizit-api.herokuapp.com/api1/users"; 
   }); 
