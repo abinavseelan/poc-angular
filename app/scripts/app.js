@@ -38,6 +38,6 @@ angular
       });
   })
   .run(function ($rootScope){
-    $rootScope.postsEndPoint = "http://localhost:7891/api1/posts";
+    $rootScope.postsEndPoint = "http://poc-inquizit-api.herokuapp.com/api1/posts";
     $rootScope.usersEndPoint = "http://poc-inquizit-api.herokuapp.com/api1/users"; 
   }); 
