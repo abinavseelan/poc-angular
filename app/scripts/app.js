@@ -20,7 +20,6 @@ angular
     'infinite-scroll'
   ])
   .config(function ($routeProvider) {
-  	//Routes
     $routeProvider
       .when('/', {
         templateUrl: 'views/newsfeed.html',
